@@ -1,0 +1,19 @@
+[build-backend]
+backend = "hatchling"
+
+[project]
+name = "my_generic_project"
+version = "0.1.0"
+description = "Your package description"
+authors = [{"name"="Your Name", "email"="blabla@gmail.com"}]
+readme = "README.md"
+# license = "MIT"
+dependencies = [
+    "numpy",
+    "pandas",
+    "seaborn",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy", "ruff"]

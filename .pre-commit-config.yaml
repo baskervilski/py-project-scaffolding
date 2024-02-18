@@ -1,0 +1,28 @@
+repos:
+  - repo: local
+    hooks:
+      - id: compile-reqs
+        name: Compile requirementes
+        description: This compiles/pins the requirements.
+        entry: make requirements
+        language: system
+        stages: [commit]
+        # Optional: Specify types of files to include (e.g., python, javascript)
+        # types: [python]
+      - id: make-lint
+        name: Lint code
+        description: This hook lints the code.
+        entry: make lint
+        language: system
+        stages: [commit]
+        # Optional: Specify types of files to include (e.g., python, javascript)
+        # types: [python]
+
+      - id: make-test
+        name: Run tests
+        description: This hook runs tests.
+        entry: make test
+        language: system
+        stages: [commit]
+        # Optional: Specify files or directories to exclude
+        # exclude: '^docs/'

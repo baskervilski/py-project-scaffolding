@@ -1,0 +1,5 @@
+line-length = 88
+target-version = 'py38'
+
+[lint]
+ignore = ['E203', 'E501']

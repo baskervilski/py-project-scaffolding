@@ -1,0 +1,17 @@
+# Python gitignore
+*.pyc
+.venv
+
+/build
+*.egg-info
+__pycache__/
+.ruff_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
